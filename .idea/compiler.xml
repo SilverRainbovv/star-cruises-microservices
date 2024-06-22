@@ -10,5 +10,10 @@
         <module name="user-service.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client-service" target="17" />
+      <module name="client-service.main" target="17" />
+      <module name="client-service.test" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

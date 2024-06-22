@@ -1,6 +1,11 @@
 spring:
   application:
     name: user-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/star-cruises-microservices
+    username: postgres
+    password: newton123
+    driver-class-name: org.postgresql.Driver
 server:
   port: 8090
 eureka:
