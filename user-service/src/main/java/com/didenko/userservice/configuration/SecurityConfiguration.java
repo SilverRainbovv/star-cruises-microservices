@@ -25,7 +25,7 @@ public class SecurityConfiguration {
     private final UserService userService;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
-    private static final String [] PERMIT_ALL = {"/users/login.**", "/users/**"};
+    private static final String [] PERMIT_ALL = {"/users/login/**", "/users/**"};
 
     @Bean
     protected SecurityFilterChain configure(HttpSecurity http) throws Exception {

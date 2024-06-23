@@ -27,8 +27,6 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
     private final UserService userService;
     private final Environment env;
-    private static final byte[] SECRET = "hkblkh31y2y3c9p1ncy2p12cpyn38yc123c123c12c3".getBytes();
-    private static final Key SECRET_KEY = Keys.hmacShaKeyFor(SECRET);
 
     public AuthenticationFilter(AuthenticationManager authenticationManager,
                                 UserService userService, Environment env) {
@@ -68,10 +66,15 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
             String username = ((User)authResult.getPrincipal()).getUsername();
             User userDetails = userService.getUserDetailsByEmail(username);
 
+            String keyPhrase = env.getProperty("TOKEN_KEY_PHRASE");
+            byte [] keyPhraseBytes = keyPhrase.getBytes();
+
+            Key secret = Keys.hmacShaKeyFor(keyPhraseBytes);
+
             String token = Jwts.builder().setSubject(userDetails.getUUID())
                     .setExpiration(Date.from(Instant.now().plusSeconds(3600)))
                     .setIssuedAt(Date.from(Instant.now()))
-                    .signWith(SECRET_KEY)
+                    .signWith(secret)
                     .compact();
 
             response.addHeader("token", token);
