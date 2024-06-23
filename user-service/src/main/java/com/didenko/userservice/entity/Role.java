@@ -1,7 +1,13 @@
 package com.didenko.userservice.entity;
 
-public enum Role {
+import org.springframework.security.core.GrantedAuthority;
 
-    ADMIN, CLIENT
+public enum Role implements GrantedAuthority {
 
+    ADMIN, CLIENT;
+
+    @Override
+    public String getAuthority() {
+        return this.name();
+    }
 }
