@@ -24,4 +24,5 @@ public class ShipReadDtoMapper implements Mapper<Ship, ShipReadDto> {
                                 .min(BigDecimal::compareTo)))
                 .build();
     }
+
 }
