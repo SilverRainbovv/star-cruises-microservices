@@ -38,6 +38,10 @@ public class SecurityConfiguration {
 
         AuthenticationManager authenticationManager = authenticationManagerBuilder.build();
 
+        AuthenticationFilter authenticationFilter = new AuthenticationFilter(authenticationManager, userService, env);
+
+        authenticationFilter.setFilterProcessesUrl("/users/login");
+
         http.csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(request -> request.requestMatchers(HttpMethod.POST, PERMIT_ALL).permitAll())
                 .addFilter(new AuthenticationFilter(authenticationManager, userService, env))

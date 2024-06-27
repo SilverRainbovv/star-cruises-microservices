@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ship-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ship-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ship-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ship-service.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/star-cruises-microservices.iml" filepath="$PROJECT_DIR$/star-cruises-microservices.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-service.main.iml" />
     </modules>

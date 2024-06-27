@@ -4,20 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="938d73aa-543d-4211-8ecc-343c446017ff" name="Changes" comment="add registration to user service">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/user-service.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/didenko/userservice/configuration/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/didenko/userservice/dto/LoginDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/didenko/userservice/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/didenko/userservice/security/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/didenko/userservice/service/UserService.java" afterDir="false" />
+    <list default="true" id="938d73aa-543d-4211-8ecc-343c446017ff" name="Changes" comment="init ship-service">
+      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/java/com/didenko/discoveryservice/AuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/controller/ShipController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/dto/SeatCreateEditDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/dto/SeatReadDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/dto/ShipCreateEditDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/dto/ShipReadDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/entity/Seat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/entity/SeatClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/entity/SeatVacancy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/entity/Ship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/mapper/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/mapper/SeatCreateEditDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/mapper/ShipCreateEditDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/mapper/ShipReadDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/repository/ShipRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/service/ShipService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/service/ShipServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/main/resources/ships.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ship-service/src/test/java/ShipMappingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ship-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/ShipServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/ShipServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship-service/src/main/resources/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/didenko/userservice/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/didenko/userservice/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/didenko/userservice/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/didenko/userservice/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/didenko/userservice/configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/didenko/userservice/configuration/SecurityConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +50,9 @@
     <projectState path="$PROJECT_DIR$/discovery-service">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/ship-service">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/user-service">
       <ProjectState />
     </projectState>
@@ -38,6 +60,12 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/discovery-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ship-service">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -50,8 +78,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,36 +100,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build discovery-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build user-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.DiscoveryServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build discovery-service.executor": "Run",
+    "Gradle.Build ship-service.executor": "Run",
+    "Gradle.Build user-service.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.Load Gradle Dependencies.executor": "Run",
+    "Gradle.ShipMappingTest.executor": "Debug",
+    "Gradle.ShipMappingTest.test.executor": "Run",
+    "Gradle.Tests in 'ship-service'.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.DiscoveryServiceApplication.executor": "Run",
+    "Spring Boot.ShipServiceApplication.executor": "Debug",
+    "Spring Boot.UserServiceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "18",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.25581396",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -108,8 +146,88 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.didenko.userservice.entity" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.didenko.shipservice.entity" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ShipServiceApplication">
+    <configuration name="ShipMappingTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ship-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ShipMappingTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ShipMappingTest.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ship-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ShipMappingTest.test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'ship-service'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ship-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ClientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="client-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.didenko.clientservice.ClientServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="client-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.didenko.clientservice.ClientServiceApplication" />
@@ -123,6 +241,39 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.didenko.discoveryservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="discovery-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.didenko.discoveryservice.DiscoveryServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.didenko.discoveryservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShipServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ship-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.didenko.shipservice.ShipServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.didenko.userservice.UserServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.didenko.userservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,7 +296,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ShipMappingTest" />
         <item itemvalue="Spring Boot.UserServiceApplication" />
+        <item itemvalue="Gradle.Tests in 'ship-service'" />
+        <item itemvalue="Gradle.ShipMappingTest.test" />
         <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
       </list>
     </recent_temporary>
@@ -169,6 +323,14 @@
       <workItem from="1718985430792" duration="6501000" />
       <workItem from="1719047329089" duration="7916000" />
       <workItem from="1719128775753" duration="1203000" />
+      <workItem from="1719133257120" duration="1909000" />
+      <workItem from="1719300550064" duration="59000" />
+      <workItem from="1719304792396" duration="1555000" />
+      <workItem from="1719306374726" duration="1689000" />
+      <workItem from="1719308145292" duration="1192000" />
+      <workItem from="1719397001152" duration="4283000" />
+      <workItem from="1719401315748" duration="444000" />
+      <workItem from="1719505939501" duration="1904000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -226,7 +388,31 @@
       <option name="project" value="LOCAL" />
       <updated>1719049546685</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add login logic to user service">
+      <option name="closed" value="true" />
+      <created>1719133355933</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719133355933</updated>
+    </task>
+    <task id="LOCAL-00009" summary="move JWT key phrase to .env">
+      <option name="closed" value="true" />
+      <created>1719135025633</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719135025633</updated>
+    </task>
+    <task id="LOCAL-00010" summary="init ship-service">
+      <option name="closed" value="true" />
+      <created>1719308933419</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719308933419</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +437,25 @@
     <MESSAGE value="add basic eureka client configuration to user service" />
     <MESSAGE value="init client service with basic eureka client configuration" />
     <MESSAGE value="add registration to user service" />
-    <option name="LAST_COMMIT_MESSAGE" value="add registration to user service" />
+    <MESSAGE value="add login logic to user service" />
+    <MESSAGE value="move JWT key phrase to .env" />
+    <MESSAGE value="init ship-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="init ship-service" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ship-service/src/test/java/ShipMappingTest.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ship-service/src/main/java/com/didenko/shipservice/controller/ShipController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
