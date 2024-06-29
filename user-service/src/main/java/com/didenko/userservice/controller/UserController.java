@@ -23,4 +23,10 @@ public class UserController {
         return new ResponseEntity<>(result, HttpStatus.CREATED);
     }
 
+    @RequestMapping("/status/check")
+    @GetMapping
+    public ResponseEntity<HttpStatus> getServiceStatus() {
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
 }

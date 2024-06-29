@@ -43,7 +43,7 @@ public class SecurityConfiguration {
         authenticationFilter.setFilterProcessesUrl("/users/login");
 
         http.csrf(csrf -> csrf.disable())
-                .authorizeHttpRequests(request -> request.requestMatchers(HttpMethod.POST, PERMIT_ALL).permitAll())
+                .authorizeHttpRequests(request -> request.requestMatchers(PERMIT_ALL).permitAll())
                 .addFilter(new AuthenticationFilter(authenticationManager, userService, env))
                 .authenticationManager(authenticationManager)
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));

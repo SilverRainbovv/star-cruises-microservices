@@ -4,6 +4,9 @@ import com.didenko.shipservice.dto.ShipCreateEditDto;
 import com.didenko.shipservice.dto.ShipReadDto;
 import com.didenko.shipservice.service.ShipService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.RequestEntity;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -27,6 +30,12 @@ public class ShipController {
 
         return shipService.save(shipCreateEditDto);
 
+    }
+
+    @RequestMapping("/status/check")
+    @GetMapping
+    public ResponseEntity<HttpStatus> getServiceStatus() {
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
 

@@ -7,7 +7,7 @@ spring:
     password: newton123
     driver-class-name: org.postgresql.Driver
 server:
-  port: 8090
+  port: 0
 eureka:
   client:
     serviceUrl:
@@ -15,5 +15,5 @@ eureka:
   instance:
     status-page-url-path: http://localhost:8010/eureka/info
     health-check-url-path: http://localhost:8010/eureka/health
-    secure-port-enabled: true
-    non-secure-port-enabled: false
+    secure-port-enabled: false
+    non-secure-port-enabled: true
