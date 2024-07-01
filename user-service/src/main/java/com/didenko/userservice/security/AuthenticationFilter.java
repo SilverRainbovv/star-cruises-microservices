@@ -27,12 +27,16 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
     private final UserService userService;
     private final Environment env;
+    private final String KEY_PHRASE;
+    private final byte[] KEY_BYTES;
 
     public AuthenticationFilter(AuthenticationManager authenticationManager,
                                 UserService userService, Environment env) {
         super(authenticationManager);
         this.userService = userService;
         this.env = env;
+        KEY_PHRASE = env.getProperty("secret-key");
+        KEY_BYTES = KEY_PHRASE.getBytes();
     }
 
     @Override
@@ -66,14 +70,14 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
             String username = ((User)authResult.getPrincipal()).getUsername();
             User userDetails = userService.getUserDetailsByEmail(username);
 
-            String keyPhrase = env.getProperty("TOKEN_KEY_PHRASE");
-            byte [] keyPhraseBytes = keyPhrase.getBytes();
+//            String keyPhrase = env.getProperty("secret-key");
+//            byte [] keyPhraseBytes = keyPhrase.getBytes();
 
-            Key secret = Keys.hmacShaKeyFor(keyPhraseBytes);
+            Key secret = Keys.hmacShaKeyFor(KEY_BYTES);
 
-            String token = Jwts.builder().setSubject(userDetails.getUUID())
-                    .setExpiration(Date.from(Instant.now().plusSeconds(3600)))
-                    .setIssuedAt(Date.from(Instant.now()))
+            String token = Jwts.builder().subject(userDetails.getUUID())
+                    .expiration(Date.from(Instant.now().plusSeconds(3600)))
+                    .issuedAt(Date.from(Instant.now()))
                     .signWith(secret)
                     .compact();
 

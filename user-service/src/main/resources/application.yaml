@@ -17,3 +17,6 @@ eureka:
     health-check-url-path: http://localhost:8010/eureka/health
     secure-port-enabled: false
     non-secure-port-enabled: true
+
+secret-key:
+  hfgry463hf746hf573ydh475fhy5739hfgry463hf746hf573ydh475fhy5739hfgry463hf746hf573ydh475fhy5739
