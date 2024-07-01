@@ -70,9 +70,6 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
             String username = ((User)authResult.getPrincipal()).getUsername();
             User userDetails = userService.getUserDetailsByEmail(username);
 
-//            String keyPhrase = env.getProperty("secret-key");
-//            byte [] keyPhraseBytes = keyPhrase.getBytes();
-
             Key secret = Keys.hmacShaKeyFor(KEY_BYTES);
 
             String token = Jwts.builder().subject(userDetails.getUUID())
